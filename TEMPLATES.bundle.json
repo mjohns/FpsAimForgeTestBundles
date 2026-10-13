@@ -1,0 +1,1045 @@
+{
+ "scenarios": [
+  {
+   "name": "Pasu SmoothSwerve",
+   "def": {
+    "durationSeconds": 40,
+    "shotType": {
+     "clickSingle": true,
+     "accuracyPenalty": "ACCURACY_PENALTY_SQRT"
+    },
+    "targetDef": {
+     "numTargets": 4,
+     "profiles": [
+      {
+       "targetRadius": 3.45,
+       "speed": 96,
+       "acceleration": 125
+      }
+     ]
+    },
+    "room": {
+     "cameraPosition": {
+      "x": 0,
+      "y": -200,
+      "z": 0
+     },
+     "simpleRoom": {
+      "height": 150,
+      "width": 190
+     }
+    },
+    "levelOverrides": {
+     "targetRadiusMultiplier": 0.96,
+     "speedMultiplier": 1.04,
+     "accelerationMultiplier": 1.02
+    },
+    "strafeDef": {
+     "bounds": {
+      "width": {
+       "xPercentValue": 0.9
+      },
+      "height": {
+       "yPercentValue": 0.9
+      }
+     },
+     "targetPlacementStrategy": {
+      "regions": [
+       {
+        "rectangle": {
+         "xLength": {
+          "xPercentValue": 0.9
+         },
+         "yLength": {
+          "yPercentValue": 0.9
+         }
+        }
+       }
+      ],
+      "minDistance": {
+       "xPercentValue": 0.13
+      }
+     },
+     "leftRightProfiles": [
+      {
+       "centerBias": 0.2,
+       "distance": {
+        "xPercentValue": 0.5
+       },
+       "distanceJitter": {
+        "xPercentValue": 0.2
+       },
+       "speedMultiplier": 1,
+       "speedMultiplierJitter": 0.05,
+       "accelerationMultiplier": 1,
+       "accelerationMultiplierJitter": 0.05
+      }
+     ],
+     "upDownProfiles": [
+      {
+       "centerBias": 0.2,
+       "distance": {
+        "yPercentValue": 0.5
+       },
+       "distanceJitter": {
+        "yPercentValue": 0.15
+       },
+       "speedMultiplier": 0.2,
+       "accelerationMultiplier": 0.1
+      }
+     ],
+     "leftRightInitialDirection": "DIRECTION_POSITIVE",
+     "upDownInitialDirection": "DIRECTION_RANDOM",
+     "forwardBackInitialDirection": "DIRECTION_RANDOM"
+    }
+   }
+  },
+  {
+   "name": "Pasu1",
+   "def": {
+    "durationSeconds": 45,
+    "shotType": {
+     "clickSingle": true,
+     "accuracyPenalty": "ACCURACY_PENALTY_SQRT"
+    },
+    "targetDef": {
+     "numTargets": 4,
+     "profiles": [
+      {
+       "targetRadius": 2.65,
+       "speed": 92,
+       "acceleration": 205
+      }
+     ]
+    },
+    "room": {
+     "cameraPosition": {
+      "x": 0,
+      "y": -200,
+      "z": 0
+     },
+     "simpleRoom": {
+      "height": 130,
+      "width": 150
+     }
+    },
+    "levelOverrides": {},
+    "strafeDef": {
+     "relativeBounds": {
+      "width": {
+       "xPercentValue": 0.34
+      }
+     },
+     "targetPlacementStrategy": {
+      "regions": [
+       {
+        "rectangle": {
+         "xLength": {
+          "xPercentValue": 0.9
+         },
+         "yLength": {
+          "yPercentValue": 0.9
+         }
+        }
+       }
+      ],
+      "minYDistance": {
+       "yPercentValue": 0.05
+      }
+     },
+     "leftRightProfiles": [
+      {
+       "distance": {
+        "xPercentValue": 0.3
+       },
+       "distanceJitter": {
+        "xPercentValue": 0.065
+       }
+      }
+     ],
+     "leftRightInitialDirection": "DIRECTION_RANDOM",
+     "upDownInitialDirection": "DIRECTION_RANDOM",
+     "forwardBackInitialDirection": "DIRECTION_RANDOM"
+    }
+   }
+  },
+  {
+   "name": "Pasu2",
+   "def": {
+    "durationSeconds": 45,
+    "shotType": {
+     "clickSingle": true,
+     "accuracyPenalty": "ACCURACY_PENALTY_SQRT"
+    },
+    "targetDef": {
+     "numTargets": 4,
+     "profiles": [
+      {
+       "targetRadius": 3.45,
+       "speed": 92,
+       "acceleration": 205
+      }
+     ]
+    },
+    "room": {
+     "cameraPosition": {
+      "x": 0,
+      "y": -200,
+      "z": 0
+     },
+     "simpleRoom": {
+      "height": 130,
+      "width": 150
+     }
+    },
+    "levelOverrides": {},
+    "strafeDef": {
+     "relativeBounds": {
+      "width": {
+       "xPercentValue": 0.34
+      },
+      "height": {
+       "yPercentValue": 0.4
+      }
+     },
+     "targetPlacementStrategy": {
+      "regions": [
+       {
+        "rectangle": {
+         "xLength": {
+          "xPercentValue": 0.9
+         },
+         "yLength": {
+          "yPercentValue": 0.9
+         }
+        }
+       }
+      ],
+      "minDistance": {
+       "xPercentValue": 0.16
+      }
+     },
+     "leftRightProfiles": [
+      {
+       "distance": {
+        "xPercentValue": 0.3
+       },
+       "distanceJitter": {
+        "xPercentValue": 0.065
+       }
+      }
+     ],
+     "upDownProfiles": [
+      {
+       "distance": {
+        "yPercentValue": 0.22
+       },
+       "distanceJitter": {
+        "yPercentValue": 0.05
+       },
+       "speedMultiplier": 0.2,
+       "accelerationMultiplier": 0.71
+      }
+     ],
+     "leftRightInitialDirection": "DIRECTION_RANDOM",
+     "upDownInitialDirection": "DIRECTION_RANDOM",
+     "forwardBackInitialDirection": "DIRECTION_RANDOM"
+    }
+   }
+  },
+  {
+   "name": "Pasu3",
+   "def": {
+    "durationSeconds": 45,
+    "shotType": {
+     "clickSingle": true,
+     "accuracyPenalty": "ACCURACY_PENALTY_SQRT"
+    },
+    "targetDef": {
+     "numTargets": 4,
+     "profiles": [
+      {
+       "targetRadius": 3.45,
+       "speed": 81,
+       "acceleration": 130
+      }
+     ]
+    },
+    "room": {
+     "cameraPosition": {
+      "x": 0,
+      "y": -200,
+      "z": 0
+     },
+     "simpleRoom": {
+      "height": 130,
+      "width": 150
+     }
+    },
+    "levelOverrides": {},
+    "strafeDef": {
+     "bounds": {
+      "depth": {
+       "depthPercentValue": 0.2
+      }
+     },
+     "relativeBounds": {
+      "width": {
+       "xPercentValue": 0.34
+      },
+      "height": {
+       "yPercentValue": 0.4
+      }
+     },
+     "targetPlacementStrategy": {
+      "regions": [
+       {
+        "rectangle": {
+         "xLength": {
+          "xPercentValue": 0.9
+         },
+         "yLength": {
+          "yPercentValue": 0.9
+         }
+        }
+       }
+      ],
+      "minDistance": {
+       "xPercentValue": 0.16
+      }
+     },
+     "leftRightProfiles": [
+      {
+       "distance": {
+        "xPercentValue": 0.26
+       },
+       "distanceJitter": {
+        "xPercentValue": 0.065
+       },
+       "speedMultiplier": 1,
+       "speedMultiplierJitter": 0.06,
+       "accelerationMultiplier": 1,
+       "accelerationMultiplierJitter": 0.06,
+       "startSpeedPercent": 0.2
+      }
+     ],
+     "forwardBackProfiles": [
+      {
+       "distance": {
+        "depthPercentValue": 0.22
+       },
+       "distanceJitter": {
+        "depthPercentValue": 0.075
+       },
+       "speedMultiplier": 0.2,
+       "accelerationMultiplier": 0.2
+      }
+     ],
+     "upDownProfiles": [
+      {
+       "info": {
+        "weight": 1
+       },
+       "centerBias": 0.2,
+       "distance": {
+        "yPercentValue": 0.22
+       },
+       "distanceJitter": {
+        "yPercentValue": 0.05
+       },
+       "speedMultiplier": 0.2,
+       "accelerationMultiplier": 0.71,
+       "pauseTime": 0.1,
+       "pauseTimeJitter": 0.1,
+       "startSpeedPercent": 0.2
+      },
+      {
+       "info": {
+        "weight": 1
+       },
+       "distance": {
+        "yPercentValue": 0.3
+       },
+       "distanceJitter": {
+        "yPercentValue": 0
+       },
+       "speedMultiplier": 1
+      }
+     ],
+     "leftRightInitialDirection": "DIRECTION_RANDOM",
+     "upDownInitialDirection": "DIRECTION_RANDOM",
+     "forwardBackInitialDirection": "DIRECTION_RANDOM"
+    }
+   }
+  },
+  {
+   "name": "Pasu4",
+   "def": {
+    "durationSeconds": 45,
+    "shotType": {
+     "clickSingle": true,
+     "accuracyPenalty": "ACCURACY_PENALTY_SQRT"
+    },
+    "targetDef": {
+     "numTargets": 4,
+     "profiles": [
+      {
+       "targetRadius": 3.45,
+       "speed": 81,
+       "acceleration": 130
+      }
+     ]
+    },
+    "room": {
+     "cameraPosition": {
+      "x": 0,
+      "y": -200,
+      "z": 0
+     },
+     "simpleRoom": {
+      "height": 130,
+      "width": 150
+     }
+    },
+    "strafeDef": {
+     "bounds": {
+      "depth": {
+       "depthPercentValue": 0.2
+      }
+     },
+     "relativeBounds": {
+      "width": {
+       "xPercentValue": 0.45
+      },
+      "height": {
+       "yPercentValue": 0.4
+      }
+     },
+     "targetPlacementStrategy": {
+      "regions": [
+       {
+        "rectangle": {
+         "xLength": {
+          "xPercentValue": 0.9
+         },
+         "yLength": {
+          "yPercentValue": 0.9
+         }
+        }
+       }
+      ],
+      "minDistance": {
+       "xPercentValue": 0.16
+      }
+     },
+     "leftRightProfiles": [
+      {
+       "info": {
+        "weight": 2
+       },
+       "centerBias": 0.2,
+       "distance": {
+        "xPercentValue": 0.26
+       },
+       "distanceJitter": {
+        "xPercentValue": 0.08
+       },
+       "speedMultiplier": 1,
+       "speedMultiplierJitter": 0.06,
+       "accelerationMultiplier": 1,
+       "accelerationMultiplierJitter": 0.06
+      },
+      {
+       "info": {
+        "description": "short",
+        "weight": 1
+       },
+       "centerBias": 0.2,
+       "distance": {
+        "xPercentValue": 0.11
+       },
+       "distanceJitter": {
+        "xPercentValue": 0.025
+       },
+       "speedMultiplier": 0.5
+      }
+     ],
+     "forwardBackProfiles": [
+      {
+       "distance": {
+        "depthPercentValue": 0.22
+       },
+       "distanceJitter": {
+        "depthPercentValue": 0.075
+       },
+       "speedMultiplier": 0.2,
+       "accelerationMultiplier": 0.2
+      }
+     ],
+     "upDownProfiles": [
+      {
+       "info": {
+        "weight": 1
+       },
+       "centerBias": 0.2,
+       "distance": {
+        "yPercentValue": 0.22
+       },
+       "distanceJitter": {
+        "yPercentValue": 0.05
+       },
+       "speedMultiplier": 0.2,
+       "accelerationMultiplier": 0.71,
+       "pauseTime": 0.1,
+       "pauseTimeJitter": 0.1,
+       "startSpeedPercent": 0.2
+      },
+      {
+       "info": {
+        "weight": 1
+       },
+       "centerBias": 0.1,
+       "distance": {
+        "yPercentValue": 0.15
+       },
+       "distanceJitter": {
+        "yPercentValue": 0.035
+       },
+       "speedMultiplier": 0.3
+      }
+     ],
+     "leftRightInitialDirection": "DIRECTION_RANDOM",
+     "upDownInitialDirection": "DIRECTION_RANDOM",
+     "forwardBackInitialDirection": "DIRECTION_RANDOM"
+    }
+   }
+  },
+  {
+   "name": "Pasu5",
+   "def": {
+    "durationSeconds": 45,
+    "shotType": {
+     "clickSingle": true,
+     "accuracyPenalty": "ACCURACY_PENALTY_SQRT"
+    },
+    "targetDef": {
+     "numTargets": 4,
+     "profiles": [
+      {
+       "targetRadius": 3.45,
+       "speed": 92,
+       "acceleration": 205
+      }
+     ]
+    },
+    "room": {
+     "cameraPosition": {
+      "x": 0,
+      "y": -200,
+      "z": 0
+     },
+     "simpleRoom": {
+      "height": 130,
+      "width": 150
+     }
+    },
+    "levelOverrides": {},
+    "strafeDef": {
+     "relativeBounds": {
+      "height": {
+       "yPercentValue": 0.4
+      }
+     },
+     "targetPlacementStrategy": {
+      "regions": [
+       {
+        "rectangle": {
+         "xLength": {
+          "xPercentValue": 0.9
+         },
+         "yLength": {
+          "yPercentValue": 0.9
+         }
+        }
+       }
+      ],
+      "minDistance": {
+       "xPercentValue": 0.16
+      }
+     },
+     "leftRightProfiles": [
+      {
+       "info": {
+        "weight": 3
+       },
+       "centerBias": 0.2,
+       "distance": {
+        "xPercentValue": 0.3
+       },
+       "distanceJitter": {
+        "xPercentValue": 0.065
+       },
+       "speedMultiplier": 0.86,
+       "speedMultiplierJitter": 0.02,
+       "accelerationMultiplier": 1,
+       "accelerationMultiplierJitter": 0.02,
+       "startSpeedPercent": 0.3
+      },
+      {
+       "info": {
+        "weight": 1
+       },
+       "distance": {
+        "xPercentValue": 0.8
+       },
+       "distanceJitter": {
+        "xPercentValue": 0.1
+       },
+       "speedMultiplier": 1.25,
+       "accelerationMultiplier": 0.83
+      }
+     ],
+     "upDownProfiles": [
+      {
+       "distance": {
+        "yPercentValue": 0.22
+       },
+       "distanceJitter": {
+        "yPercentValue": 0.05
+       },
+       "speedMultiplier": 0.2,
+       "speedMultiplierJitter": 0.04,
+       "accelerationMultiplier": 0.71,
+       "accelerationMultiplierJitter": 0.05
+      }
+     ],
+     "leftRightInitialDirection": "DIRECTION_RANDOM",
+     "upDownInitialDirection": "DIRECTION_RANDOM",
+     "forwardBackInitialDirection": "DIRECTION_RANDOM"
+    }
+   }
+  },
+  {
+   "name": "Pasu6",
+   "def": {
+    "durationSeconds": 45,
+    "shotType": {
+     "clickSingle": true,
+     "accuracyPenalty": "ACCURACY_PENALTY_SQRT"
+    },
+    "targetDef": {
+     "numTargets": 4,
+     "profiles": [
+      {
+       "targetRadius": 3.45,
+       "speed": 101,
+       "acceleration": 120
+      }
+     ]
+    },
+    "room": {
+     "cameraPosition": {
+      "x": 0,
+      "y": -200,
+      "z": 0
+     },
+     "simpleRoom": {
+      "height": 130,
+      "width": 150
+     }
+    },
+    "levelOverrides": {},
+    "strafeDef": {
+     "bounds": {
+      "depth": {
+       "depthPercentValue": 0.17
+      }
+     },
+     "targetPlacementStrategy": {
+      "regions": [
+       {
+        "rectangle": {
+         "xLength": {
+          "xPercentValue": 0.9
+         },
+         "yLength": {
+          "yPercentValue": 0.9
+         }
+        }
+       }
+      ],
+      "minDistance": {
+       "xPercentValue": 0.16
+      }
+     },
+     "leftRightProfiles": [
+      {
+       "info": {
+        "weight": 3
+       },
+       "centerBias": 0.2,
+       "distance": {
+        "xPercentValue": 0.28
+       },
+       "distanceJitter": {
+        "xPercentValue": 0.065
+       },
+       "speedMultiplier": 0.86,
+       "speedMultiplierJitter": 0.02,
+       "accelerationMultiplier": 1,
+       "accelerationMultiplierJitter": 0.02,
+       "startSpeedPercent": 0.3
+      },
+      {
+       "info": {
+        "weight": 1
+       },
+       "distance": {
+        "xPercentValue": 0.8
+       },
+       "distanceJitter": {
+        "xPercentValue": 0.1
+       },
+       "speedMultiplier": 1.25,
+       "accelerationMultiplier": 0.83
+      },
+      {
+       "info": {
+        "weight": 1
+       },
+       "distance": {
+        "xPercentValue": 0.19
+       },
+       "distanceJitter": {
+        "xPercentValue": 0.065
+       },
+       "speedMultiplier": 0.91,
+       "accelerationMultiplier": 1.16,
+       "accelerationMultiplierJitter": 0.16
+      }
+     ],
+     "forwardBackProfiles": [
+      {
+       "centerBias": 0.1,
+       "distance": {
+        "depthPercentValue": 0.38
+       },
+       "distanceJitter": {
+        "depthPercentValue": 0.105
+       },
+       "speedMultiplier": 0.2,
+       "speedMultiplierJitter": 0.07,
+       "accelerationMultiplier": 0.3,
+       "accelerationMultiplierJitter": 0.03,
+       "pauseTime": 0.1,
+       "pauseTimeJitter": 0.1
+      }
+     ],
+     "upDownProfiles": [
+      {
+       "info": {
+        "weight": 4
+       },
+       "distance": {
+        "yPercentValue": 0.22
+       },
+       "distanceJitter": {
+        "yPercentValue": 0.05
+       },
+       "speedMultiplier": 0.2,
+       "speedMultiplierJitter": 0.04,
+       "accelerationMultiplier": 0.71,
+       "accelerationMultiplierJitter": 0.05
+      },
+      {
+       "info": {
+        "weight": 1,
+        "minSelectionGap": 3
+       },
+       "distance": {
+        "yPercentValue": 0.91
+       },
+       "distanceJitter": {
+        "yPercentValue": 0
+       },
+       "speedMultiplier": 0.1
+      }
+     ],
+     "leftRightInitialDirection": "DIRECTION_RANDOM",
+     "upDownInitialDirection": "DIRECTION_RANDOM",
+     "forwardBackInitialDirection": "DIRECTION_RANDOM"
+    }
+   }
+  },
+  {
+   "name": "Pasu7",
+   "def": {
+    "durationSeconds": 60,
+    "shotType": {
+     "clickSingle": true,
+     "accuracyPenalty": "ACCURACY_PENALTY_SQRT"
+    },
+    "targetDef": {
+     "numTargets": 4,
+     "profiles": [
+      {
+       "targetRadius": 4.15,
+       "speed": 63,
+       "acceleration": 181
+      }
+     ]
+    },
+    "room": {
+     "cameraPosition": {
+      "x": 0,
+      "y": -200,
+      "z": 0
+     },
+     "simpleRoom": {
+      "height": 210,
+      "width": 260
+     }
+    },
+    "levelOverrides": {
+     "targetRadiusMultiplier": 0.98,
+     "speedMultiplier": 1.02
+    },
+    "strafeDef": {
+     "bounds": {
+      "width": {
+       "xPercentValue": 0.85
+      },
+      "height": {
+       "yPercentValue": 0.85
+      }
+     },
+     "relativeBounds": {
+      "width": {
+       "xPercentValue": 0.35
+      }
+     },
+     "targetPlacementStrategy": {
+      "regions": [
+       {
+        "depth": {
+         "value": 0
+        },
+        "depthJitter": {
+         "value": 0
+        },
+        "rectangle": {
+         "xLength": {
+          "xPercentValue": 0.599999905
+         },
+         "yLength": {
+          "yPercentValue": 0.599999905
+         }
+        }
+       }
+      ],
+      "minDistance": {
+       "value": 65
+      }
+     },
+     "leftRightProfiles": [
+      {
+       "distance": {
+        "xPercentValue": 0.46
+       },
+       "distanceJitter": {
+        "xPercentValue": 0.09
+       }
+      }
+     ],
+     "upDownProfiles": [
+      {
+       "info": {
+        "description": "Slow Vertical"
+       },
+       "distance": {
+        "yPercentValue": 0.5
+       },
+       "distanceJitter": {
+        "yPercentValue": 0.2
+       },
+       "speedMultiplier": 0.35,
+       "accelerationMultiplier": 1.35
+      }
+     ],
+     "leftRightInitialDirection": "DIRECTION_RANDOM",
+     "upDownInitialDirection": "DIRECTION_RANDOM",
+     "forwardBackInitialDirection": "DIRECTION_RANDOM"
+    }
+   }
+  },
+  {
+   "name": "Pasu8",
+   "def": {
+    "durationSeconds": 60,
+    "shotType": {
+     "clickSingle": true,
+     "accuracyPenalty": "ACCURACY_PENALTY_SQRT"
+    },
+    "targetDef": {
+     "numTargets": 4,
+     "profiles": [
+      {
+       "targetRadius": 4.6,
+       "speed": 68,
+       "acceleration": 216
+      }
+     ]
+    },
+    "room": {
+     "cameraPosition": {
+      "x": 0,
+      "y": -200,
+      "z": 0
+     },
+     "simpleRoom": {
+      "height": 135,
+      "width": 260
+     }
+    },
+    "levelOverrides": {
+     "targetRadiusMultiplier": 0.98,
+     "speedMultiplier": 1.02
+    },
+    "strafeDef": {
+     "bounds": {
+      "width": {
+       "xPercentValue": 0.85
+      },
+      "height": {
+       "yPercentValue": 0.85
+      }
+     },
+     "relativeBounds": {
+      "width": {
+       "xPercentValue": 0.39
+      }
+     },
+     "targetPlacementStrategy": {
+      "regions": [
+       {
+        "rectangle": {
+         "xLength": {
+          "xPercentValue": 0.599999905
+         },
+         "yLength": {
+          "yPercentValue": 0.599999905
+         }
+        }
+       }
+      ],
+      "minDistance": {
+       "xPercentValue": 0.05
+      },
+      "minXDistance": {
+       "xPercentValue": 0.03
+      },
+      "minYDistance": {
+       "yPercentValue": 0.03
+      }
+     },
+     "leftRightProfiles": [
+      {
+       "centerBias": 0.1,
+       "distance": {
+        "xPercentValue": 0.46
+       },
+       "distanceJitter": {
+        "xPercentValue": 0.09
+       },
+       "speedMultiplier": 1,
+       "speedMultiplierJitter": 0.02,
+       "startSpeedPercent": 0.1
+      }
+     ],
+     "upDownProfiles": [
+      {
+       "info": {
+        "description": "Slow Vertical",
+        "weight": 2
+       },
+       "distance": {
+        "yPercentValue": 0.5
+       },
+       "distanceJitter": {
+        "yPercentValue": 0.2
+       },
+       "speedMultiplier": 0.35,
+       "speedMultiplierJitter": 0.02,
+       "accelerationMultiplier": 1.35,
+       "accelerationMultiplierJitter": 0.02
+      },
+      {
+       "info": {
+        "weight": 1,
+        "minSelectionGap": 3
+       },
+       "centerBias": 0.2,
+       "distance": {
+        "yPercentValue": 0.07
+       },
+       "distanceJitter": {
+        "yPercentValue": 0.02
+       },
+       "speedMultiplier": 0.87,
+       "speedMultiplierJitter": 0.03
+      }
+     ],
+     "leftRightInitialDirection": "DIRECTION_RANDOM",
+     "upDownInitialDirection": "DIRECTION_RANDOM",
+     "forwardBackInitialDirection": "DIRECTION_RANDOM"
+    }
+   }
+  }
+ ],
+ "playlists": [
+  {
+   "name": "Pasu",
+   "def": {
+    "items": [
+     {
+      "scenario": "TEMPLATES Pasu1",
+      "numPlays": 1
+     },
+     {
+      "scenario": "TEMPLATES Pasu2",
+      "numPlays": 1
+     },
+     {
+      "scenario": "TEMPLATES Pasu3",
+      "numPlays": 1
+     },
+     {
+      "scenario": "TEMPLATES Pasu4",
+      "numPlays": 1
+     },
+     {
+      "scenario": "TEMPLATES Pasu5",
+      "numPlays": 1
+     },
+     {
+      "scenario": "TEMPLATES Pasu6",
+      "numPlays": 1
+     },
+     {
+      "scenario": "TEMPLATES Pasu7",
+      "numPlays": 1
+     },
+     {
+      "scenario": "TEMPLATES Pasu8",
+      "numPlays": 1
+     },
+     {
+      "scenario": "TEMPLATES Pasu SmoothSwerve",
+      "numPlays": 1
+     }
+    ]
+   }
+  }
+ ]
+}
+
